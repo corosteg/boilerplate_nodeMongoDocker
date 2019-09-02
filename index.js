@@ -12,7 +12,7 @@ app.get('/', (req, res) => {
     if (err) {
       res.status(500).send('💥 BOOM 💥: ' + err);
     } else {
-      res.send('Me conecté a la DB! 😎');
+      res.send('Node working and connected at MongoDB 😎');
       db.close();
     }
   });
